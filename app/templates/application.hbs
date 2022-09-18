@@ -2,19 +2,54 @@
 <article>
 <h1>The MIT License (MIT)</h1>
 
-<p><div class="panel media"><strong>Itemdescription</strong>
+<p><div class="panel media"><strong>Unggah Gambar</strong>
 <a href="#" class="img">
-<img src="http://nesta.pages.dev/img/twibbon.png" style="width:100px;height:100px;"  alt="me" />
+<img id="avatar" src="preview.png" style="width:100px;height:100px;"  alt="me" />
 </a>
 
 <div class="bd">
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven </p>
+<p><input type="file" accept="image/*" onchange="loadFile(event)"></p>
 </div>
 </div></p>
 
-<p>The above copyright notice and this permission notice shall be included in
-      all copies or substantial portions of the Software.</p>
+<p><div class="panel media"><strong>Unggah Bingkai</strong>
+<a href="#" class="img">
+<img id="bingkai" src="twibbon.png" style="width:100px;height:100px;"  alt="me" />
+</a>
+
+<div class="bd">
+<p><input type='file' accept="image/*" onchange="loadTemplate(event)"></p>
+</div>
+</div></p>
+
+<p><button class="button" onclick="gen()">PRATINJAU</button></p>
+
+
+<!-- Result -->
+<div id="custom-modal" class="custom-modal">
+<div class="custom-modal-dialog">
+<div class="custom-modal-content">
+<span class="close-modal">X</span>
+<div class="custom-modal-body">
+<div class="custom-modal-inner">
+<!-- Contetn here -->
+<h4>Well Done! </h4>
+<p>
+<img class="res" id="avatar" style="display: none" src="/preview.jpg"/>
+<img class="res" id="bingkai" style="display: none" src="/preview.jpg"/>
+<canvas id="canvas"></canvas>
+</p>
+
+<p>
+<button class="button green arrow" id="btndownload">UNDUH</button>
+<button class="button red arrow" id="cancel" onclick="location.reload()">HAPUS</button> 
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
 
 <p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
       IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
