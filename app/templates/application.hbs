@@ -5,7 +5,7 @@
 <p>Silahkan unggah gambar dan bingkai Anda, aplikasi ini akan otomatis menggabungkan dengan unggahan gambar dan bingkai yang Anda pilih.</p>
 <p><div class="panel media"><strong>Unggah Gambar</strong>
 <a href="#" class="img">
-<img src="/preview.png" style="width:100px;height:100px;"  alt="Unggah Gambar" />
+<img class="lazyestload" src="/preview.png" style="width:100px;height:100px;"  alt="Unggah Gambar" />
 </a>
 
 <div class="bd">
@@ -16,7 +16,7 @@
 
 <p><div class="panel media"><strong>Unggah Bingkai</strong>
 <a href="#" class="img">
-<img src="/twibbon.png" style="width:100px;height:100px;"  alt="Unggah bingkai" />
+<img class="lazyestload" src="/twibbon.png" style="width:100px;height:100px;"  alt="Unggah bingkai" />
 </a>
 
 <div class="bd">
@@ -37,9 +37,9 @@
 <!-- Contetn here -->
 <h4>Well Done! </h4>
 <p>
-<img id="avatar" style="display: none" src="/preview.jpg"/>
-<img id="bingkai" style="display: none" src="/preview.jpg"/>
-<canvas id="canvas"></canvas>
+<img class="lazyestload" id="avatar" style="display: none" src="/preview.jpg"/>
+<img class="lazyestload" id="bingkai" style="display: none" src="/preview.jpg"/>
+<canvas class="lazyestload" id="canvas"></canvas>
 </p>
 
 <p>
@@ -66,6 +66,7 @@
 </footer>
 <script src="/script.js"></script>
 <script src="/modals.js"></script>
+<script src="/loader.js"></script>
 {{!-- Feel free to remove this! --}}
 
 {{outlet}}
