@@ -24,12 +24,14 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     {{content-for "head-footer"}}
   </head>
-  <body>
+  <body class="loading">
     {{content-for "body"}}
 
     <script src="{{rootURL}}assets/vendor.js"></script>
     <script src="{{rootURL}}assets/hello-world.js"></script>
 
+    
+    <div class="dots-loader"></div>
     {{content-for "body-footer"}}
   </body>
 </html>
