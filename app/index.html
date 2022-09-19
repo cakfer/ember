@@ -17,6 +17,8 @@
     <style>img,canvas{width:100%;height:auto;}</style>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="eager-image-loader.min.js"></script>
+    <script>new EagerImageLoader()</script>
     {{content-for "head-footer"}}
   </head>
   <body a="auto">
@@ -25,6 +27,7 @@
     <script src="{{rootURL}}assets/vendor.js"></script>
     <script src="{{rootURL}}assets/hello-world.js"></script>
 
+    <script>loader = new EagerImageLoader([targets[, options]])</script>
     {{content-for "body-footer"}}
   </body>
 </html>
