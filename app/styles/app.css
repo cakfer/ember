@@ -5,3 +5,4 @@
 .media .img img{display:block;}
 .media .imgExt{float:right; margin-left: 10px;}
 .input{padding:10px;background:#d3edf8;border-radius:2px;outline:none;color:#444444;border:1pxsolid#0da2ff;}
+.input:focus{top:-10px;background-color:#d3edf8;}
