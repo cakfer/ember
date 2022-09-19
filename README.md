@@ -1,4 +1,4 @@
-![Preview](public/twibbon.png)
+![Preview](public/og.png)
 
 # Twibbon Generator
 
